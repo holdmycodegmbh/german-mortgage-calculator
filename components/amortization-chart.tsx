@@ -33,7 +33,7 @@ export function AmortizationChart({ chartData }: AmortizationChartProps) {
         font: {
           size: 18,
         },
-        color: "#1e293b", // slate-800
+        color: "#1e293b",
       },
     },
     scales: {
