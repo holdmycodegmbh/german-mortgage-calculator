@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 import { MortgageInput } from "@/components/mortgage-input"
 import { AmortizationChart } from "@/components/amortization-chart"
 import type { ChartData } from "chart.js"
+import { Github } from "lucide-react"
 
 // Helper to format currency in German style
 const formatCurrency = (value: number): string => {
@@ -135,7 +136,19 @@ export default function MortgageCalculatorPage() {
   return (
     <div className="min-h-screen bg-slate-100 py-8 px-4 flex flex-col items-center justify-center">
       <div className="bg-white p-6 md:p-8 rounded-xl shadow-2xl w-full max-w-4xl">
-        <h1 className="text-2xl md:text-3xl font-bold text-center text-slate-800 mb-6 md:mb-8">German Mortgage Calculator Example</h1>
+        <div className="flex items-center justify-between mb-6 md:mb-8">
+          <h1 className="text-2xl md:text-3xl font-bold text-slate-800">German Mortgage Calculator Example</h1>
+          <a 
+            href="https://github.com/holdmycodegmbh/german-mortgage-calculator" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 bg-slate-800 hover:bg-slate-700 text-white rounded-lg transition-colors duration-200 text-sm font-medium"
+            title="View on GitHub"
+          >
+            <Github size={16} />
+            View on GitHub
+          </a>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4">
           <MortgageInput

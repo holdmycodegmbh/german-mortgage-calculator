@@ -7,7 +7,7 @@
   "homepage": "https://german-mortgage-calculator.holdmycode.io",
   "repository": {
     "type": "git",
-    "url": "d"
+    "url": "https://github.com/holdmycodegmbh/german-mortgage-calculator"
   },
   "private": true,
   "scripts": {
